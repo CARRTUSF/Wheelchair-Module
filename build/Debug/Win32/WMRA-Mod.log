@@ -1,0 +1,795 @@
+﻿Build started 7/28/2014 2:41:20 PM.
+     1>Project "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\WMRA-Mod.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\WMRA-Mod.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\include" /I"C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\3rdparty\SockStream\include" /Zi /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\\" /Fd"C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\3rdparty\SockStream\src\SockStream.cpp ..\src\application.cpp ..\src\Arm.cpp ..\src\ConfigReader.cpp ..\src\galilController.cpp ..\src\jacobian.cpp ..\src\kinematics.cpp ..\src\MotorController.cpp ..\src\optimization.cpp ..\src\SocketControl.cpp ..\src\stringUtility.cpp ..\src\tinythread.cpp ..\src\trajectory.cpp ..\src\Utility.cpp ..\src\WMRArobot.cpp
+         SockStream.cpp
+         application.cpp
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\application.cpp(31): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\application.cpp(63): warning C4101: 'temp_buf' : unreferenced local variable
+     1>..\src\application.cpp(139): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\application.cpp(253): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\application.cpp(278): warning C4101: 'velocity' : unreferenced local variable
+     1>..\src\application.cpp(289): warning C4101: 'temp' : unreferenced local variable
+         Arm.cpp
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\Arm.cpp(56): warning C4101: 'temp_buf' : unreferenced local variable
+     1>..\src\Arm.cpp(220): warning C4101: 'jointEnc' : unreferenced local variable
+     1>..\src\Arm.cpp(252): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>..\src\Arm.cpp(255): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>..\src\Arm.cpp(316): warning C4018: '<' : signed/unsigned mismatch
+     1>..\src\Arm.cpp(402): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(402) : while compiling class template member function 'double &math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(412) : while compiling class template member function 'double math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error) const'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(315) : while compiling class template member function 'math::matrix<T>::matrix(size_t,size_t)'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(511) : while compiling class template member function 'math::matrix<T> &math::matrix<T>::operator *=(const math::matrix<T> &) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(667) : while compiling class template member function 'math::matrix<T> math::matrix<T>::Inv(void) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+         ConfigReader.cpp
+     1>..\src\ConfigReader.cpp(44): warning C4101: 'result' : unreferenced local variable
+         galilController.cpp
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\galilController.cpp(91): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\src\galilController.cpp(117): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\galilController.cpp(126): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\galilController.cpp(168): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(175) : see declaration of 'strncat'
+         jacobian.cpp
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(402) : while compiling class template member function 'double &math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(843) : while compiling class template member function 'double math::matrix<T>::Det(void) throw(math::matrix_error) const'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(412) : while compiling class template member function 'double math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error) const'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(315) : while compiling class template member function 'math::matrix<T>::matrix(size_t,size_t)'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(511) : while compiling class template member function 'math::matrix<T> &math::matrix<T>::operator *=(const math::matrix<T> &) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+         kinematics.cpp
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\kinematics.cpp(135): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(135): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(135): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\src\kinematics.cpp(136): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(136): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\src\kinematics.cpp(137): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(137): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(137): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\src\kinematics.cpp(138): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(138): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(138): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\src\kinematics.cpp(139): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(139): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(139): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\src\kinematics.cpp(140): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(140): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\src\kinematics.cpp(141): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\src\kinematics.cpp(141): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(402) : while compiling class template member function 'double &math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(511) : while compiling class template member function 'math::matrix<T> &math::matrix<T>::operator *=(const math::matrix<T> &) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(315) : while compiling class template member function 'math::matrix<T>::matrix(size_t,size_t)'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(667) : while compiling class template member function 'math::matrix<T> math::matrix<T>::Inv(void) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+         MotorController.cpp
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\MotorController.cpp(235): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\MotorController.cpp(276): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\MotorController.cpp(485): warning C4244: 'return' : conversion from 'double' to 'long', possible loss of data
+     1>..\src\MotorController.cpp(627): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\MotorController.cpp(634): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\MotorController.cpp(641): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\MotorController.cpp(648): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\MotorController.cpp(655): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\MotorController.cpp(662): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\MotorController.cpp(669): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\MotorController.cpp(676): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         optimization.cpp
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\optimization.cpp(103): warning C4018: '<' : signed/unsigned mismatch
+     1>..\src\optimization.cpp(197): warning C4018: '<' : signed/unsigned mismatch
+     1>..\src\optimization.cpp(65): warning C4101: 'WCA' : unreferenced local variable
+     1>..\src\optimization.cpp(305): warning C4244: 'argument' : conversion from 'double' to 'const size_t', possible loss of data
+     1>..\src\optimization.cpp(339): warning C4018: '<' : signed/unsigned mismatch
+     1>..\src\optimization.cpp(224): warning C4101: 'WCA' : unreferenced local variable
+     1>..\src\optimization.cpp(354): warning C4018: '<' : signed/unsigned mismatch
+     1>..\src\optimization.cpp(357): warning C4018: '<' : signed/unsigned mismatch
+     1>..\src\optimization.cpp(375): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 ..\src\optimization.cpp(357) : definition of 'i' ignored
+                 ..\src\optimization.cpp(349) : definition of 'i' used
+     1>..\src\optimization.cpp(462): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 ..\src\optimization.cpp(357) : definition of 'i' ignored
+                 ..\src\optimization.cpp(349) : definition of 'i' used
+     1>..\src\optimization.cpp(462): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 ..\src\optimization.cpp(357) : definition of 'i' ignored
+                 ..\src\optimization.cpp(349) : definition of 'i' used
+     1>..\src\optimization.cpp(481): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 ..\src\optimization.cpp(357) : definition of 'i' ignored
+                 ..\src\optimization.cpp(349) : definition of 'i' used
+     1>..\src\optimization.cpp(492): warning C4244: 'argument' : conversion from 'double' to 'const size_t', possible loss of data
+     1>..\src\optimization.cpp(512): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 ..\src\optimization.cpp(357) : definition of 'i' ignored
+                 ..\src\optimization.cpp(349) : definition of 'i' used
+     1>..\src\optimization.cpp(528): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 ..\src\optimization.cpp(357) : definition of 'i' ignored
+                 ..\src\optimization.cpp(349) : definition of 'i' used
+     1>..\src\optimization.cpp(539): warning C4244: 'argument' : conversion from 'double' to 'const size_t', possible loss of data
+     1>..\src\optimization.cpp(577): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 ..\src\optimization.cpp(357) : definition of 'i' ignored
+                 ..\src\optimization.cpp(349) : definition of 'i' used
+     1>..\src\optimization.cpp(634): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(402) : while compiling class template member function 'double &math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(843) : while compiling class template member function 'double math::matrix<T>::Det(void) throw(math::matrix_error) const'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(412) : while compiling class template member function 'double math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error) const'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(315) : while compiling class template member function 'math::matrix<T>::matrix(size_t,size_t)'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(474) : while compiling class template member function 'math::matrix<T> &math::matrix<T>::operator +=(const math::matrix<T> &) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(487) : while compiling class template member function 'math::matrix<T> &math::matrix<T>::operator -=(const math::matrix<T> &) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(511) : while compiling class template member function 'math::matrix<T> &math::matrix<T>::operator *=(const math::matrix<T> &) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(667) : while compiling class template member function 'math::matrix<T> math::matrix<T>::Inv(void) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+         SocketControl.cpp
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\SocketControl.cpp(36): warning C4101: 'temp_buf' : unreferenced local variable
+     1>..\src\SocketControl.cpp(93): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\SocketControl.cpp(114): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\SocketControl.cpp(188): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\SocketControl.cpp(267): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\SocketControl.cpp(330): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+     1>..\src\SocketControl.cpp(391): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(325) : see declaration of 'sscanf'
+         stringUtility.cpp
+         tinythread.cpp
+         trajectory.cpp
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 ..\src\trajectory.cpp(23) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\trajectory.cpp(273): warning C4244: 'initializing' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>..\src\trajectory.cpp(289): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>..\src\trajectory.cpp(242): warning C4101: 'a52' : unreferenced local variable
+     1>..\src\trajectory.cpp(242): warning C4101: 'a51' : unreferenced local variable
+     1>..\src\trajectory.cpp(242): warning C4101: 'a42' : unreferenced local variable
+     1>..\src\trajectory.cpp(242): warning C4101: 'a41' : unreferenced local variable
+     1>..\src\trajectory.cpp(306): warning C4244: 'initializing' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>..\src\trajectory.cpp(314): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>..\src\trajectory.cpp(326): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>..\src\trajectory.cpp(333): warning C4244: 'initializing' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>..\src\trajectory.cpp(344): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(402) : while compiling class template member function 'double &math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+                 ..\src\trajectory.cpp(23) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(412) : while compiling class template member function 'double math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error) const'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(315) : while compiling class template member function 'math::matrix<T>::matrix(size_t,size_t)'
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(511) : while compiling class template member function 'math::matrix<T> &math::matrix<T>::operator *=(const math::matrix<T> &) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+         Utility.cpp
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\Utility.cpp(57): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 ..\src\Utility.cpp(82) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\include\matrix.h(402) : while compiling class template member function 'double &math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+                 ..\src\Utility.cpp(82) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+         WMRArobot.cpp
+         Generating Code...
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\src\motorcontroller.cpp(265): warning C4715: 'MotorController::readPos' : not all control paths return a value
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\src\motorcontroller.cpp(309): warning C4715: 'MotorController::readPosErr' : not all control paths return a value
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\src\motorcontroller.cpp(333): warning C4715: 'MotorController::setMaxVelocity' : not all control paths return a value
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\src\motorcontroller.cpp(357): warning C4715: 'MotorController::setAccel' : not all control paths return a value
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\src\motorcontroller.cpp(381): warning C4715: 'MotorController::setDecel' : not all control paths return a value
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\src\motorcontroller.cpp(409): warning C4715: 'MotorController::definePosition' : not all control paths return a value
+     1>c:\users\dashley2\documents\bt_sync\dans carrt work\wmra-mod-program\src\motorcontroller.cpp(446): warning C4715: 'MotorController::positionControl' : not all control paths return a value
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\bin\Debug\Win32\WMRA-Mod.lib" /NOLOGO "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\SockStream.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\application.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\Arm.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\ConfigReader.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\galilController.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\jacobian.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\kinematics.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\MotorController.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\optimization.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\SocketControl.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\stringUtility.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\tinythread.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\trajectory.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\Utility.obj"
+         "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\WMRArobot.obj"
+         WMRA-Mod.vcxproj -> C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\bin\Debug\Win32\WMRA-Mod.lib
+       FinalizeBuildStatus:
+         Deleting file "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\WMRA-Mod.unsuccessfulbuild".
+         Touching "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\..\build\Debug\Win32\WMRA-Mod.lastbuildstate".
+     1>Done Building Project "C:\Users\dashley2\Documents\BT_Sync\Dans CARRT Work\WMRA-Mod-Program\vc10-lib\WMRA-Mod.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.04
