@@ -19,6 +19,8 @@ using namespace std;
 class DMC4143 {
 public:
 	DMC4143();
+	bool isInitialized();
+	void stop();
 	std::string command(std::string Command); // user command structure, used by MotorController
 private:
 	bool initialized;

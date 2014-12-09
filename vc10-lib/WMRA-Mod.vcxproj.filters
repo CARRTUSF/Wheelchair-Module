@@ -21,9 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\ConfigReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\3rdparty\SockStream\src\SockStream.cpp">
       <Filter>Source Files\SocketStream</Filter>
     </ClCompile>
@@ -37,9 +34,6 @@
   <ItemGroup>
     <ClInclude Include="..\3rdparty\SockStream\include\SockStream.h">
       <Filter>Header Files\SocketStream</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\ConfigReader.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\include\matrix.h">
       <Filter>Header Files</Filter>

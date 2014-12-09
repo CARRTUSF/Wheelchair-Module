@@ -1,5 +1,4 @@
 
-#include "ConfigReader.h"
 #include "SockStream.h"
 #include "stringUtility.h"
 #include "DMC-4143_Controller.h"
@@ -14,6 +13,16 @@ client_tcpsocket DMC4143::sock;
 DMC4143::DMC4143()
 {
 	initialized = setupSocket();
+}
+
+bool DMC4143::isInitialized()
+{
+	return initialized;
+}
+
+void DMC4143::stop()
+{
+	this->command("ST AB");
 }
 
 std::string DMC4143::command(std::string Command)

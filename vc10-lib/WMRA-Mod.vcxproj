@@ -115,13 +115,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\3rdparty\SockStream\src\SockStream.cpp" />
-    <ClCompile Include="..\src\ConfigReader.cpp" />
     <ClCompile Include="..\src\DMC-4143_Controller.cpp" />
     <ClCompile Include="..\src\Wheelchair_module.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\3rdparty\SockStream\include\SockStream.h" />
-    <ClInclude Include="..\include\ConfigReader.h" />
     <ClInclude Include="..\include\matrix.h" />
     <ClInclude Include="..\include\DMC-4143_Controller.h" />
     <ClInclude Include="..\include\WmraTypes.h" />
