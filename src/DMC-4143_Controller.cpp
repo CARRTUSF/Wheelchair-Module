@@ -25,6 +25,30 @@ void DMC4143::stop()
 	this->command("ST AB");
 }
 
+bool DMC4143::setPosition(long position,int motor)
+{
+	//this->command("
+	return true;
+}
+
+bool DMC4143::setVelocity(long velocity,int motor)
+{
+	// #DEBUG - convert velocity into a string then make:  "SP " + vel
+	//if(motor==1)
+		//this->command("SP velocity");
+	return true;
+}
+
+bool DMC4143::setAcceleration(long acceleration,int motor)
+{
+	return true;
+}
+
+bool DMC4143::setTorque(long torque,int motor)
+{
+	return true;
+}
+
 std::string DMC4143::command(std::string Command)
 {
 	char com[300];

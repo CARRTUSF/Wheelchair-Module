@@ -21,6 +21,14 @@ public:
 	DMC4143();
 	bool isInitialized();
 	void stop();
+	bool setPosition(long position,int motor);
+	bool setVelocity(long velocity,int motor);
+	bool setAcceleration(long acceleration,int motor);
+	bool setTorque(long torque,int motor);
+	long getPosition(int motor);
+	long getVelocity(int motor);
+	long getAcceleration(int motor);
+	long getTorque(int motor);
 	std::string command(std::string Command); // user command structure, used by MotorController
 private:
 	bool initialized;
