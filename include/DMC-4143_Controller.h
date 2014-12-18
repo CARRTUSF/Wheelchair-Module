@@ -35,6 +35,7 @@ private:
 	int commandGalil(char* Command, char* Response, int ResponseSize); // Galil Controller command structure, used by command()
 	static client_tcpsocket sock; // The socket class used to communicate with galil controller
 	bool setupSocket();
+	bool setDefaults(); // set defaults
 };
 
 #endif;

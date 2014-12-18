@@ -120,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\3rdparty\SockStream\include\SockStream.h" />
+    <ClInclude Include="..\include\ConfigReader.h" />
     <ClInclude Include="..\include\matrix.h" />
     <ClInclude Include="..\include\DMC-4143_Controller.h" />
     <ClInclude Include="..\include\WmraTypes.h" />

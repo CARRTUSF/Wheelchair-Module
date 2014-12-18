@@ -50,5 +50,8 @@
     <ClInclude Include="..\include\DMC-4143_Controller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\ConfigReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -7,5 +7,9 @@ DMC4143 controller;
 
 Wheelchair_module::Wheelchair_module(void)
 {
-	
+}
+
+bool Wheelchair_module::isInitialized()
+{
+	return controller.isInitialized();
 }

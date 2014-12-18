@@ -13,6 +13,7 @@ namespace WMRA{
 	{
 	public:
 		Wheelchair_module(void);
+		bool isInitialized();
 	};
 };
 
