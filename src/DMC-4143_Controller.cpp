@@ -28,25 +28,62 @@ void DMC4143::stop()
 
 bool DMC4143::setPosition(long position,int motor)
 {
-	//this->command("
-	return true;
+	string command;
+	if(motor == 1)
+	{
+		command = "DPA";
+	}
+	else if(motor == 2)
+	{
+		command = "DPB";
+	}
+	else
+	{
+		return false;
+	}
+
+	this->command(command + "=" + to_string(long double(position)));
+	return true;            
+
 }
 
 bool DMC4143::setVelocity(long velocity,int motor)
 {
-	// #DEBUG - convert velocity into a string then make:  "SP " + vel
-	//if(motor==1)
-		//this->command("SP velocity");
+	string command;
+	if(motor == 1)
+	{
+		command = "SPA";
+	}
+	else if(motor == 2)
+	{
+		command = "SPB";
+	}
+	else
+	{
+		return false;
+	}
+			
+	this->command(command + "=" + to_string(long double(velocity)));
 	return true;
 }
 
 bool DMC4143::setAcceleration(long acceleration,int motor)
 {
-	return true;
-}
-
-bool DMC4143::setTorque(long torque,int motor)
-{
+	string command;
+	if(motor == 1)
+	{
+		command = "ACA";
+	}
+	else if(motor == 2)
+	{
+		command = "ACB";
+	}
+	else
+	{
+		return false;
+	}
+			
+	this->command(command + "=" + to_string(long double(acceleration)));
 	return true;
 }
 

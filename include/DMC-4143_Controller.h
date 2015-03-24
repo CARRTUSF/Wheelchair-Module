@@ -28,7 +28,6 @@ public:
 	long getPosition(int motor);
 	long getVelocity(int motor);
 	long getAcceleration(int motor);
-	long getTorque(int motor);
 	std::string command(std::string Command); // user command structure, used by MotorController
 private:
 	bool initialized;
