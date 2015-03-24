@@ -1,4 +1,4 @@
-﻿Build started 12/22/2014 3:05:03 PM.
+﻿Build started 3/24/2015 2:34:18 PM.
      1>Project "C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\vc10-lib\WMRA-Mod.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\vc10-lib\..\build\Release\Win32\WMRA-Mod.lastbuildstate".
@@ -8,10 +8,85 @@
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\vc10-lib\..\include" /I"C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\vc10-lib\..\3rdparty\SockStream\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\vc10-lib\..\build\Release\Win32\\" /Fd"C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\vc10-lib\..\build\Release\Win32\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\3rdparty\SockStream\src\SockStream.cpp "..\src\DMC-4143_Controller.cpp" ..\src\Wheelchair_module.cpp
          SockStream.cpp
          DMC-4143_Controller.cpp
-     1>..\src\DMC-4143_Controller.cpp(73): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\include\DMC-4143_Controller.h(51) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>..\src\DMC-4143_Controller.cpp(43): warning C4244: '=' : conversion from 'clock_t' to 'float', possible loss of data
+     1>..\src\DMC-4143_Controller.cpp(48): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\src\DMC-4143_Controller.cpp(49): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\src\DMC-4143_Controller.cpp(50): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\src\DMC-4143_Controller.cpp(51): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\src\DMC-4143_Controller.cpp(141): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
-     1>..\src\DMC-4143_Controller.cpp(116): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\src\DMC-4143_Controller.cpp(166): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\src\DMC-4143_Controller.cpp(167): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>..\src\DMC-4143_Controller.cpp(206): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(175) : see declaration of 'strncat'
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(402) : while compiling class template member function 'double &math::matrix<T>::operator ()(size_t,size_t) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+                 C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\include\DMC-4143_Controller.h(51) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(511) : while compiling class template member function 'math::matrix<T> &math::matrix<T>::operator *=(const math::matrix<T> &) throw(math::matrix_error)'
+                 with
+                 [
+                     T=double
+                 ]
+                 c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(315) : while compiling class template member function 'math::matrix<T>::matrix(size_t,size_t)'
+                 with
+                 [
+                     T=double
+                 ]
          Wheelchair_module.cpp
      1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
                  c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
@@ -44,7 +119,7 @@
      1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
      1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
      1>c:\users\dashley2\documents\github\wheelchair-module\include\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-                 C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\include\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 C:\Users\dashley2\Documents\GitHub\Wheelchair-Module\include\DMC-4143_Controller.h(51) : see reference to class template instantiation 'math::matrix<T>' being compiled
                  with
                  [
                      T=double
@@ -71,4 +146,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.51
+Time Elapsed 00:00:04.05

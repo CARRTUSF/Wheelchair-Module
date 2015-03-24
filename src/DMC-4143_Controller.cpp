@@ -3,9 +3,11 @@
 #include "SockStream.h"
 #include "stringUtility.h"
 #include "DMC-4143_Controller.h"
+#include <time.h>
+
 
 using namespace std;
-
+using namespace tthread;
 
 client_tcpsocket DMC4143::sock;
 
@@ -13,12 +15,56 @@ client_tcpsocket DMC4143::sock;
 
 DMC4143::DMC4143()
 {
-	initialized = setupSocket();
+	if(setupSocket())
+			initialized = startup();
+	else
+		initialized = 0;
 }
 
 bool DMC4143::isInitialized()
 {
 	return initialized;
+}
+
+void DMC4143::running(void * aArg) {
+	DMC4143* a = (DMC4143*)aArg;
+	
+	clock_t last_time, current_time;
+	int loop_counter = 0;
+	current_time = clock();
+	last_time = current_time;
+	float dt = 0.0;
+	float phi_old = 0.0;
+
+	while(1)
+	{
+		/****Calculate dt****/
+		clock_t current_time = clock();
+		dt = (current_time - last_time)/CLOCKS_PER_SEC;
+		last_time = current_time;
+		/********************/
+
+
+		float L1 = a->chairParameter[0];
+		float L2 = a->chairParameter[1];
+		float L3 = a->chairParameter[2];
+		float L5 = a->chairParameter[4];
+		
+		Matrix JwhA_3D(6,2);
+		JwhA_3D(0,0) = ((L5*(cos(phi_old) + (2*L3*cos(phi_old) + 2*L2*sin(phi_old))/L1))/2);
+		JwhA_3D(0,1) = ((L5*(cos(phi_old) - (2*L3*cos(phi_old) + 2*L2*sin(phi_old))/L1))/2);
+		JwhA_3D(1,0) = ((L5*(sin(phi_old) - (2*L2*cos(phi_old) - 2*L3*sin(phi_old))/L1))/2);
+		JwhA_3D(1,1) = ((L5*(sin(phi_old) + (2*L2*cos(phi_old) - 2*L3*sin(phi_old))/L1))/2);
+		JwhA_3D(2,0) = (0);
+		JwhA_3D(2,1) = (0);
+		JwhA_3D(3,0) = (0);
+		JwhA_3D(3,1) = (0);
+		JwhA_3D(4,0) = (0);
+		JwhA_3D(4,1) = (0);
+		JwhA_3D(5,0) = (-L5/L1);
+		JwhA_3D(5,1) = (L5/L1);
+
+	}
 }
 
 void DMC4143::stop()
@@ -105,13 +151,35 @@ std::string DMC4143::command(std::string Command)
 
 bool DMC4143::setupSocket()
 {
-	std::string IP = "192.168.1.22"; // #DEBUG - Change to wheelchair IP address
+	std::string IP = "192.168.1.40"; // #DEBUG - Change to wheelchair IP address
 
 	const char * c = IP.c_str();
 	sock.open(c,23);
 
 	return DMC4143::sock.connected(); // #DEBUG - breaks if trying to setup sock while WMRA is off
-	return sock.is_open();
+	//return sock.is_open();
+}
+
+bool DMC4143::startup()
+{
+	t = new thread(running,this);
+	float L1 = chairParameter[0];
+	float L5 = chairParameter[4];
+	Matrix q_dot_chair(2,1);
+	q_dot_chair(0,0) = 0;
+	q_dot_chair(1,0) = 0;
+	Matrix dt = q_dot_chair;
+	Matrix Xphi_dot(2,2);
+	Xphi_dot(0,0) = (L5/2);
+	Xphi_dot(0,1) = (L5/2);
+	Xphi_dot(1,0) = (-L5/L1);
+	Xphi_dot(1,1) = (L5/L1);
+	Xphi_dot = Xphi_dot * q_dot_chair;
+
+	Matrix DXphi_dot = Xphi_dot*dt;
+
+	return DMC4143::sock.connected(); // #DEBUG - breaks if trying to setup sock while WMRA is off
+	//return sock.is_open();
 }
 
 int DMC4143::commandGalil(char* Command, char* Response, int ResponseSize) //returns the number of bytes read
@@ -144,460 +212,48 @@ int DMC4143::commandGalil(char* Command, char* Response, int ResponseSize) //ret
 	return(iTotalBytesRead);
 }
 
-
 bool DMC4143::setDefaults()
 {
+	chairParameter.resize(5); 
 	ConfigReader reader;
 	reader.parseFile("settings_wheelchair_controller.conf");
-	reader.setSection("MOTOR_CONTROLLER_DEFAULTS");
+	reader.setSection("Parameters");
+	if(reader.keyPresent("L1")){			
+		chairParameter[0] = reader.getInt("L1");
+	}
+	else{
+		cout << "'L1' default not found" << endl;			
+		return 0;
+	}
+	if(reader.keyPresent("L2")){			
+		chairParameter[1] = reader.getInt("L2");
+	}
+	else{
+		cout << "'L2' default not found" << endl;			
+		return 0;
+	}
+	if(reader.keyPresent("L3")){			
+		chairParameter[2] = reader.getInt("L3");
+	}
+	else{
+		cout << "'L3' default not found" << endl;			
+		return 0;
+	}
+	if(reader.keyPresent("L4")){			
+		chairParameter[3] = reader.getInt("L4");
+	}
+	else{
+		cout << "'L4' default not found" << endl;			
+		return 0;
+	}
+	if(reader.keyPresent("L5")){			
+		chairParameter[4] = reader.getInt("L5");
+	}
+	else{
+		cout << "'L5' default not found" << endl;			
+		return 0;
+	}
 
-	//if(reader.keyPresent("encoderPerRevolution1")){			
-	//	enc2Radian[0] = 2*M_PI/reader.getInt("encoderPerRevolution1"); //calculate conversion values
-	//	radian2Enc[0] = 1/enc2Radian[0];
-	//}
-	//else{
-	//	cout << "'encoderPerRevolution1' default not found" << endl;			
-	//	return 0;
-	//}
-	//if(reader.keyPresent("encoderPerRevolution2")){
-	//	enc2Radian[1] = 2*M_PI/reader.getInt("encoderPerRevolution2"); //calculate conversion values
-	//	radian2Enc[1] = 1/enc2Radian[1];
-	//}
-	//else{
-	//	cout << "'encoderPerRevolution2' default not found" << endl;			
-	//	return 0;
-	//}
-	//if(reader.keyPresent("encoderPerRevolution3"))
-	//{
-	//	enc2Radian[2] = 2*M_PI/reader.getInt("encoderPerRevolution3"); //calculate conversion values
-	//	radian2Enc[2] = 1/enc2Radian[2];
-	//}
-	//else
-	//{
-	//	cout << "'encoderPerRevolution3' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("encoderPerRevolution4"))
-	//{
-	//	enc2Radian[3] = 2*M_PI/reader.getInt("encoderPerRevolution4"); //calculate conversion values
-	//	radian2Enc[3] = 1/enc2Radian[3];
-	//}
-	//else
-	//{
-	//	cout << "'encoderPerRevolution4' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("encoderPerRevolution5"))
-	//{
-	//	enc2Radian[4] = 2*M_PI/reader.getInt("encoderPerRevolution5"); //calculate conversion values
-	//	radian2Enc[4] = 1/enc2Radian[4];
-	//}
-	//else
-	//{
-	//	cout << "'encoderPerRevolution5' default not found" << endl;
-	//	return 0;
-	//}
-
-	//if(reader.keyPresent("encoderPerRevolution6"))
-	//{
-	//	enc2Radian[5] = -2*M_PI/reader.getInt("encoderPerRevolution6"); //calculate conversion values
-	//	radian2Enc[5] = 1/enc2Radian[5];
-	//}
-	//else
-	//{
-	//	cout << "'encoderPerRevolution6' default not found" << endl;
-	//	return 0;
-	//}
-
-	//if(reader.keyPresent("encoderPerRevolution7"))
-	//{
-	//	enc2Radian[6] = 2*M_PI/reader.getInt("encoderPerRevolution7"); //calculate conversion values
-	//	radian2Enc[6] = 1/enc2Radian[6];
-	//}
-	//else
-	//{
-	//	cout << "'encoderPerRevolution7' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("encoderPerRevolution8")) //#Debug: encoderPerRevolution8 value is incorrect
-	//{
-	//	enc2Radian[7] = 2*M_PI/reader.getInt("encoderPerRevolution8"); //calculate conversion values
-	//	radian2Enc[7] = 1/enc2Radian[7];
-	//}
-	//else
-	//{
-	//	cout << "'encoderPerRevolution8' default not found" << endl;
-	//	return 0;
-	//}
-
-	//// set motor type to brushed motor
-	//if(reader.keyPresent("brushedMotor1"))
-	//	brushedMotors[0] = reader.getInt("brushedMotor1");
-	//else
-	//{
-	//	cout << "'brushedMotor1' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("brushedMotor2"))
-	//	brushedMotors[1] = reader.getInt("brushedMotor2"); 
-	//else
-	//{
-	//	cout << "'brushedMotor2' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("brushedMotor3"))
-	//	brushedMotors[2] = reader.getInt("brushedMotor3");
-	//else
-	//{
-	//	cout << "'brushedMotor3' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("brushedMotor4"))
-	//	brushedMotors[3] = reader.getInt("brushedMotor4"); 
-	//else
-	//{
-	//	cout << "'brushedMotor4' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("brushedMotor5"))
-	//	brushedMotors[4] = reader.getInt("brushedMotor5"); 
-	//else
-	//{
-	//	cout << "'brushedMotor5' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("brushedMotor6"))
-	//	brushedMotors[5] = reader.getInt("brushedMotor6"); 
-	//else
-	//{
-	//	cout << "'brushedMotor6' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("brushedMotor7"))
-	//	brushedMotors[6] = reader.getInt("brushedMotor7"); 
-	//else
-	//{
-	//	cout << "'brushedMotor7' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("brushedMotor8"))
-	//	brushedMotors[7] = reader.getInt("brushedMotor8"); 
-	//else
-	//{
-	//	cout << "'brushedMotor8' default not found" << endl;
-	//	return 0;
-	//}
-
-	////set all motors to position tracking mode
-	//if(reader.keyPresent("motorMode"))
-	//	motorMode = LINEAR;  // DEBUG - Needs to read from settings file
-	////motorMode = reader.getInt("motorMode");
-	////motorMode = reader.getString("motorMode");
-	//else
-	//{
-	//	cout << "'motorMode' default not found" << endl;
-	//	return 0;
-	//}
-
-	//// Set Max Velocity
-	//if(reader.keyPresent("maxVelocity1"))
-	//	motorVelocity[0] = reader.getDouble("maxVelocity1"); 
-	//else
-	//{
-	//	cout << "'maxVelocity1' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("maxVelocity2"))
-	//	motorVelocity[1] = reader.getDouble("maxVelocity2"); 
-	//else
-	//{
-	//	cout << "'maxVelocity2' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("maxVelocity3"))
-	//	motorVelocity[2] = reader.getDouble("maxVelocity3"); 
-	//else
-	//{
-	//	cout << "'maxVelocity3' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("maxVelocity4"))
-	//	motorVelocity[3] = reader.getDouble("maxVelocity4"); 
-	//else
-	//{
-	//	cout << "'maxVelocity4' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("maxVelocity5"))
-	//	motorVelocity[4] = reader.getDouble("maxVelocity5"); 
-	//else		
-	//{
-	//	cout << "'maxVelocity5' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("maxVelocity6"))
-	//	motorVelocity[5] = reader.getDouble("maxVelocity6"); 
-	//else
-	//{
-	//	cout << "'maxVelocity6' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("maxVelocity7"))
-	//	motorVelocity[6] = reader.getDouble("maxVelocity7"); 
-	//else
-	//{
-	//	cout << "'maxVelocity7' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("maxVelocity8"))
-	//	motorVelocity[7] = reader.getDouble("maxVelocity8"); 
-	//else
-	//{
-	//	cout << "'maxVelocity8' default not found" << endl;
-	//	return 0;
-	//}
-
-	////Set Acceleration
-	//if(reader.keyPresent("acceleration1"))
-	//	motorAccel[0] = reader.getDouble("acceleration1"); 
-	//else 
-	//{
-	//	cout << "'acceleration1' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("acceleration2"))
-	//	motorAccel[1] = reader.getDouble("acceleration2"); 
-	//else
-	//{
-	//	cout << "'acceleration2' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("acceleration3"))
-	//	motorAccel[2] = reader.getDouble("acceleration3"); 
-	//else
-	//{
-	//	cout << "'acceleration3' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("acceleration4"))
-	//	motorAccel[3] = reader.getDouble("acceleration4"); 
-	//else
-	//{
-	//	cout << "'acceleration4' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("acceleration5"))
-	//	motorAccel[4] = reader.getDouble("acceleration5"); 
-	//else		
-	//{
-	//	cout << "'acceleration5' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("acceleration6"))
-	//	motorAccel[5] = reader.getDouble("acceleration6"); 
-	//else
-	//{
-	//	cout << "'acceleration6' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("acceleration7"))
-	//	motorAccel[6] = reader.getDouble("acceleration7"); 
-	//else
-	//{
-	//	cout << "'acceleration7' default not found" << endl;
-	//	return 0;
-	//}
-
-	//if(reader.keyPresent("acceleration8"))
-	//	motorAccel[7] = reader.getDouble("acceleration8"); 
-	//else
-	//{
-	//	cout << "'acceleration8' default not found" << endl;
-	//	return 0;
-	//}
-
-	////Set Decceleration
-	//if(reader.keyPresent("deceleration1"))
-	//	motorDecel[0] = reader.getDouble("deceleration1"); 
-	//else
-	//{
-	//	cout << "'deceleration1' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("deceleration2"))
-	//	motorDecel[1] = reader.getDouble("deceleration2"); 
-	//else
-	//{
-	//	cout << "'deceleration2' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("deceleration3"))
-	//	motorDecel[2] = reader.getDouble("deceleration3"); 
-	//else
-	//{
-	//	cout << "'deceleration3' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("deceleration4"))
-	//	motorDecel[3] = reader.getDouble("deceleration4"); 
-	//else
-	//{
-	//	cout << "'deceleration4' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("deceleration5"))
-	//	motorDecel[4] = reader.getDouble("deceleration5"); 
-	//else
-	//{
-	//	cout << "'deceleration5' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("deceleration6"))
-	//	motorDecel[5] = reader.getDouble("deceleration6"); 
-	//else
-	//{
-	//	cout << "'deceleration6' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("deceleration7"))
-	//	motorDecel[6] = reader.getDouble("deceleration7"); 
-	//else
-	//{
-	//	cout << "'deceleration7' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("deceleration8"))
-	//	motorDecel[7] = reader.getDouble("deceleration8"); 
-	//else
-	//{
-	//	cout << "'deceleration8' default not found" << endl;
-	//	return 0;
-	//}
-
-	///*set accelaration smoothing from default*/ 
-	//if(reader.keyPresent("smoothing"))
-	//	smoothingVal = reader.getDouble("smoothing");
-	//else
-	//{
-	//	cout << "'smoothing' default not found" << endl;
-	//	return 0;
-	//}
-
-	///*set default ready position*/
-	//if(reader.keyPresent("readyPosition1"))
-	//	readyPosition[0] = reader.getDouble("readyPosition1"); 
-	//else
-	//{
-	//	cout << "'readyPosition1' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("readyPosition2"))
-	//	readyPosition[1] = reader.getDouble("readyPosition2"); 
-	//else
-	//{
-	//	cout << "'readyPosition2' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("readyPosition3"))
-	//	readyPosition[2] = reader.getDouble("readyPosition3"); 
-	//else
-	//{
-	//	cout << "'readyPosition3' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("readyPosition4"))
-	//	readyPosition[3] = reader.getDouble("readyPosition4"); 
-	//else
-	//{
-	//	cout << "'readyPosition4' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("readyPosition5"))
-	//	readyPosition[4] = reader.getDouble("readyPosition5"); 
-	//else
-	//{
-	//	cout << "'readyPosition5' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("readyPosition6"))
-	//	readyPosition[5] = reader.getDouble("readyPosition6"); 
-	//else
-	//{
-	//	cout << "'readyPosition6' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("readyPosition7"))
-	//	readyPosition[6] = reader.getDouble("readyPosition7"); 
-	//else
-	//{
-	//	cout << "'readyPosition7' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("readyPosition8"))
-	//	readyPosition[7] = reader.getDouble("readyPosition8"); 
-	//else
-	//{
-	//	cout << "'readyPosition8' default not found" << endl;
-	//	return 0;
-	//}
-
-	///*set default park position*/
-	//if(reader.keyPresent("parkPosition1"))
-	//	parkPosition[0] = reader.getDouble("parkPosition1"); 
-	//else
-	//{
-	//	cout << "'parkPosition1' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("parkPosition2"))
-	//	parkPosition[1] = reader.getDouble("parkPosition2"); 
-	//else
-	//{
-	//	cout << "'parkPosition2' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("parkPosition3"))
-	//	parkPosition[2] = reader.getDouble("parkPosition3"); 
-	//else
-	//{
-	//	cout << "'parkPosition3' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("parkPosition4"))
-	//	parkPosition[3] = reader.getDouble("parkPosition4"); 
-	//else
-	//{
-	//	cout << "'parkPosition4' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("parkPosition5"))
-	//	parkPosition[4] = reader.getDouble("parkPosition5"); 
-	//else
-	//{
-	//	cout << "'parkPosition5' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("parkPosition6"))
-	//	parkPosition[5] = reader.getDouble("parkPosition6"); 
-	//else
-	//{
-	//	cout << "'parkPosition6' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("parkPosition7"))
-	//	parkPosition[6] = reader.getDouble("parkPosition7"); 
-	//else
-	//{
-	//	cout << "'parkPosition7' default not found" << endl;
-	//	return 0;
-	//}
-	//if(reader.keyPresent("parkPosition8"))
-	//	parkPosition[7] = reader.getDouble("parkPosition8"); 
-	//else
-	//{
-	//	cout << "'parkPosition8' default not found" << endl;
-	//	return 0;
-	//}
 
 	return 1;
 }

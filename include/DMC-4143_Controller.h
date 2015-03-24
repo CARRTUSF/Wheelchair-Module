@@ -11,10 +11,19 @@
 #include <exception>
 #include <vector>
 #include <ctype.h>
+#include "matrix.h" 
+#include "tinythread.h"
 
 class client_tcpsocket;
 
 using namespace std;
+using namespace math;
+
+#ifndef _NO_TEMPLATE
+typedef matrix<double> Matrix;
+#else
+typedef matrix Matrix;
+#endif
 
 class DMC4143 {
 public:
@@ -29,12 +38,17 @@ public:
 	long getVelocity(int motor);
 	long getAcceleration(int motor);
 	std::string command(std::string Command); // user command structure, used by MotorController
+	vector<int> chairParameter;
 private:
+	tthread::thread* t;
+	static void running(void * aArg);
 	bool initialized;
 	int commandGalil(char* Command, char* Response, int ResponseSize); // Galil Controller command structure, used by command()
 	static client_tcpsocket sock; // The socket class used to communicate with galil controller
 	bool setupSocket();
+	bool startup();
 	bool setDefaults(); // set defaults
+	Matrix J_Dtheta2Dphi;
 };
 
 #endif;
